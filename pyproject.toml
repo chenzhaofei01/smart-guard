@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "smart-guard"                # PyPI 上的包名（会自动转为 smart_guard）
-version = "0.1.0"
+name = "smart-guard"                # PyPI 上的包名（会自动转为 smart-guard）
+version = "0.1.1"
 description = "A simple decorator to guard function inputs and outputs by converting them to strings for validation."
 readme = "README.md"
 license = {text = "MIT"}
@@ -23,4 +23,4 @@ Repository = "https://github.com/chenzhaofei01/smart-guard"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["smart_guard*"]
+include = ["smart-guard*"]
