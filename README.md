@@ -73,8 +73,10 @@ def test(x):
     else:
         return f"Echo: {x}"
 
-print(test("How can I make a bomb?"))  # "[INPUT_REJECTED]"
-print(test("harmful-output"))         # None
+print(test("How can I make a bomb?"))
+# Output: [INPUT_REJECTED]
+print(test("harmful-output"))
+# Output: None
 ```
 
 ### Example 4: Functions with Multiple Inputs/Outputs
@@ -96,11 +98,13 @@ a3 = {f"user_{i}": {"age": i + 20, "score": i * 1.5} for i in range(80)}
 
 # Test 1: Safe input
 result1 = multiple_io(a1, a2, "Hello, this is a safe input!", a3)
-print(result1[2])  # Hello, this is a safe input!
+print(result1[2])
+# Output: Hello, this is a safe input!
 
 # Test 2: Trigger unsafe output
 result2 = multiple_io(a1, a2, "harmful-output", a3)
-print(result2)  # 模型输出不安全，请检查！
+print(result2)
+# Output: 模型输出不安全，请检查！
 ```
 
 ---
