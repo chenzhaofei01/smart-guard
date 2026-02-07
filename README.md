@@ -19,7 +19,7 @@ pip install smart-guard
 Import the guard and wrap your functions with `@Smart_YuFeng_XGuard` to enable input/output validation.
 
 ```
-from smart-guard import Smart_YuFeng_XGuard
+from smart_guard import Smart_YuFeng_XGuard
 ```
 
 ### Example 1: Validate Both Input and Output
