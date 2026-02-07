@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart-guard"                # PyPI 上的包名（会自动转为 smart_guard）
+version = "0.1.0"
+description = "A simple decorator to guard function inputs and outputs by converting them to strings for validation."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "chenzhaofei", email = "1107552795@qq.com"}]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.7"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/chenzhaofei01/smart-guard"
+Repository = "https://github.com/chenzhaofei01/smart-guard"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["smart_guard*"]
