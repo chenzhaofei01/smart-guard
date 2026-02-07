@@ -61,5 +61,5 @@ print(result1[2]) # Hello, this is a safe input!
 result2 = multiple_io(a1, a2, "harmful-output", a3)
 print(result2) # 模型输出不安全，请检查！
 ```
-See [GitHub]([https://github.com](https://github.com/chenzhaofei01/smart-guard)) for details.
+See [GitHub](https://github.com](https://github.com/chenzhaofei01/smart-guard) for details.
 
